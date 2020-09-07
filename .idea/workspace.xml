@@ -2,49 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccb22b28-8074-43c6-a968-0b7002d33d36" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Advertisement.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Application.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Course.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/CourseType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Section.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/StudentEvaluation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/UserInfo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/UserType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/AdvertisementFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/ApplicationFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/CourseFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/SectionFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/UserInfoFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_03_125314_create_courses_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_03_164425_create_advertisements_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_06_183622_create_applications_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_12_184535_create_sections_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_07_01_100621_create_user_types_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_07_01_101435_add_usertype_column.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_07_13_132224_create_user_infos_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_07_18_112307_create_media_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_07_21_140831_create_course_types_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_07_21_160949_add_course_type_id_column.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_02_182537_create_section_user_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_07_222449_create_student_evaluations_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/AdvertisementSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/ApplicationSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/CourseSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/MediaSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/SectionSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/UserInfoSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/UserSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/backpack/base/auth/register.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/backpack/crud/buttons/accept.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/TeacherCrudController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/teacher/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/backpack/crud/buttons/disable.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/StudentCrudController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/backpack/base/inc/sidebar_content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/backpack/base/inc/sidebar_content.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/backpack/custom.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/backpack/custom.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +16,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -192,11 +156,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/factories" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/Admin" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Apps\Final-project-oxford-dashboard\app\Http\Controllers\Admin" />
       <recent name="D:\Apps\Final-project-oxford-dashboard\database\factories" />
       <recent name="D:\Apps\Final-project-oxford-dashboard\app" />
       <recent name="D:\Apps\Final-project-oxford-dashboard\database\seeds" />
@@ -219,7 +184,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598019210024</updated>
-      <workItem from="1598019212337" duration="5897000" />
+      <workItem from="1598019212337" duration="6718000" />
+      <workItem from="1599488180148" duration="1483000" />
     </task>
     <servers />
   </component>
@@ -227,17 +193,21 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="413" y="128" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598022060297">
+    <state x="413" y="128" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599488686589">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="413" y="128" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1598022060297" />
+    <state x="413" y="128" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1599488686589" />
+    <state x="390" y="125" width="610" height="488" key="find.popup" timestamp="1599489205828">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="390" y="125" width="610" height="488" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1599489205828" />
     <state x="408" y="18" key="refactoring.ChangeSignatureDialog" timestamp="1598023975299">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="408" y="18" key="refactoring.ChangeSignatureDialog/0.0.1366.738@0.0.1366.738" timestamp="1598023975299" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1598025171833">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1599489491938">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1598025171833" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1599489491938" />
   </component>
 </project>
