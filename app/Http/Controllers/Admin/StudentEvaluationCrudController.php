@@ -58,7 +58,13 @@ class StudentEvaluationCrudController extends CrudController
     {
         CRUD::setValidation(StudentEvaluationRequest::class);
 
-        CRUD::setFromDb(); // fields
+        CRUD::field('first_name')->type('text');
+        CRUD::field('last_name')->type('text');
+        CRUD::field('email')->type('email');
+        CRUD::field('dob')->type('date');
+        CRUD::field('phone_number')->type('text');
+        CRUD::field('password')->type('password');
+        CRUD::field('address')->type('text');
 
         /**
          * Fields can be defined using the fluent syntax or array syntax:

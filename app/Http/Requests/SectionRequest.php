@@ -26,7 +26,10 @@ class SectionRequest extends FormRequest
     public function rules()
     {
         return [
-            // 'name' => 'required|min:5|max:255'
+            'course_type_id'=>'required|exists:course_types,id',
+            'user_id'=>'required|exists:users,id',
+            'start_at'=>'required|before_or_equal:end_at',
+            'end_at'=>'required||after_or_equal:start_at'   
         ];
     }
 

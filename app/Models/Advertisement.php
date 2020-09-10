@@ -30,4 +30,11 @@ class Advertisement extends Model implements HasMedia
             ->width(100)
             ->height(100);
     }
+    
+    
+    public function course()
+    {
+        return $this->belongsTo(Course::class);
+    }
+
 }

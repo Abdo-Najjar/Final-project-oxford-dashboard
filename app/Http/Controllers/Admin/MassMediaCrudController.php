@@ -58,7 +58,42 @@ class MassMediaCrudController extends CrudController
     {
         CRUD::setValidation(MassMediaRequest::class);
 
-        CRUD::setFromDb(); // fields
+        // CRUD::setFromDb(); // fields
+
+        CRUD::field('title')->type('text');
+        CRUD::field('description')->type('textarea');
+        CRUD::field('url')->type('text');
+
+        CRUD::addField([
+            'name' => 'course_type_id',
+            'label' => 'Course Type',
+            'type' => 'select',
+            'entity' => 'courseType',
+            'attribute' => 'name',
+            'wrapperAttributes' => [
+                'class' => 'col-md-6'
+            ],
+        ]);
+
+        CRUD::addField([
+            'name'    => 'type',
+            'label'   => 'Type',
+            'type'    => 'select_from_array',
+            'options' => ['0' => 'Video', '1' => 'Audio'],
+            'wrapperAttributes' => [
+                'class' => 'col-md-6'
+            ],
+
+        ]);
+
+        // CRUD::field([
+        //     // select_from_array
+        //     'name'    => 'status',
+        //     'label'   => 'Status',
+        //     // 'type'    => 'select_from_array',
+        //     // 'options' => ['draft' => 'Draft (invisible)', 'published' => 'Published (visible)'],
+        // ]);
+        // course_type_id
 
         /**
          * Fields can be defined using the fluent syntax or array syntax:

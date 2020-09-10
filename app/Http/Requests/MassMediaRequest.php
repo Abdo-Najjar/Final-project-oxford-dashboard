@@ -26,7 +26,11 @@ class MassMediaRequest extends FormRequest
     public function rules()
     {
         return [
-            // 'name' => 'required|min:5|max:255'
+            'title'=>'required|string',
+            'description'=>'required|string',
+            'url'=>'required|url',
+            'type'=>"required|min:0|max:1",
+            'course_type_id'=>'required',
         ];
     }
 

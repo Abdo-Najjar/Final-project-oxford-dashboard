@@ -9,7 +9,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
 class Advertisement extends Model implements HasMedia
 {
-    
+
     use InteractsWithMedia;
 
     protected $guarded = [];
@@ -27,12 +27,18 @@ class Advertisement extends Model implements HasMedia
         return null;
     }
 
+    
+    public function course()
+    {
+        return $this->belongsTo(Course::class);
+    }
+
 
     public function registerAllMediaConversions(?Media $media = null): void
     {
         $this->addMediaConversion('thumbnail')
-                ->width(100)
-                ->height(100);
-
+            ->width(100)
+            ->height(100);
     }
+
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Requests\AdvertisementRequest;
+use App\Models\Course;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 
@@ -58,7 +59,44 @@ class AdvertisementCrudController extends CrudController
     {
         CRUD::setValidation(AdvertisementRequest::class);
 
-        CRUD::setFromDb(); // fields
+
+        CRUD::addField([
+            'name' => 'course_id',
+            'label' => 'Course',
+            'type' => 'select',
+            'entity' => 'course',
+            'attribute' => 'title',
+            'wrapperAttributes' => [
+                'class' => 'col-md-6'
+            ],
+        ]);
+
+        CRUD::addField(
+
+            [
+                'name'      => 'profile_image', // The db column name
+                'label'     => 'Image', // Table column heading
+                'type'      => 'image',
+                // 'prefix' => 'folder/subfolder/',
+                // image from a different disk (like s3 bucket)
+                // 'disk'   => 'disk-name', 
+                // optional width/height if 25px is not ok with you
+                'height' => '30px',
+                'width'  => '30px',
+            ],
+        );
+
+
+        // CRUD::addField([
+        //     'name' => 'course_id',
+        //     'label' => 'Course',
+        //     'type' => 'select_from_array',
+        //     'options' => Course::all(),
+        //     'attribute' => 'title',
+        //     'wrapperAttributes' => [
+        //         'class' => 'col-md-6'
+        //     ],
+        // ]);
 
         /**
          * Fields can be defined using the fluent syntax or array syntax:

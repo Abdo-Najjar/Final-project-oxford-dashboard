@@ -28,7 +28,7 @@ class ApplicationCrudController extends CrudController
         CRUD::setModel(\App\Models\Application::class);
         CRUD::setRoute(config('backpack.base.route_prefix') . '/application');
         CRUD::setEntityNameStrings('application', 'applications');
-        $this->crud->addButtonFromView('line', 'accept', 'accept', 'beginning');
+        $this->crud->addButtonFromView('line', 'accept', 'accept', 'end');
     }
 
     /**

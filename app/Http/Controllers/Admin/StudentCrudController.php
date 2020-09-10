@@ -15,10 +15,11 @@ use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 class StudentCrudController extends CrudController
 {
     use \Backpack\CRUD\app\Http\Controllers\Operations\ListOperation;
-    use \Backpack\CRUD\app\Http\Controllers\Operations\CreateOperation;
-    use \Backpack\CRUD\app\Http\Controllers\Operations\UpdateOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\DeleteOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\ShowOperation;
+    use \Backpack\CRUD\app\Http\Controllers\Operations\CreateOperation;
+    use \Backpack\CRUD\app\Http\Controllers\Operations\UpdateOperation;
+    
 
     /**
      * Configure the CrudPanel object. Apply settings to all operations.
@@ -60,8 +61,13 @@ class StudentCrudController extends CrudController
     protected function setupCreateOperation()
     {
         CRUD::setValidation(UserRequest::class);
-
-        CRUD::setFromDb(); // fields
+        CRUD::field('first_name')->type('text');
+        CRUD::field('last_name')->type('text');
+        CRUD::field('email')->type('email');
+        CRUD::field('dob')->type('date');
+        CRUD::field('phone_number')->type('text');
+        CRUD::field('password')->type('password');
+        CRUD::field('address')->type('text');
 
         /**
          * Fields can be defined using the fluent syntax or array syntax:

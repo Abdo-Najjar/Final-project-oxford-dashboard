@@ -26,7 +26,22 @@ class CourseRequest extends FormRequest
     public function rules()
     {
         return [
-            // 'name' => 'required|min:5|max:255'
+            'title'=>'required|string|max:255',
+            'course_type_id'=>'required|exists:course_types,id',
+            'image'=>'sometimes|file|image|max:2000',
+            'description'=>'required|string',
+            'details'=>'required|string',
+            'price'=>'required|numeric',
+            'books_fees'=>'required|numeric',
+            'min_age'=>'required|numeric',
+            'mook_exam'=>'required|integer',
+            'duration'=>'required|string|max:255',
+            'class_size'=>'required|integer',
+            'weeks'=>'required|integer',
+            'days'=>'required|string|max:255',
+            'hours'=>'required|integer',
+            'start'=>'required|string|max:255',
+            'time' =>'required|date_format:H:i'
         ];
     }
 

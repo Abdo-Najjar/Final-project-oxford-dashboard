@@ -32,7 +32,7 @@ class TeacherCrudController extends CrudController
         CRUD::setEntityNameStrings('teacher', 'teachers');
         $this->crud->addClause('where', 'usertype_id', User::TEACHER_TYPE);
         $this->crud->setShowView('teacher.show');
-        $this->crud->addButtonFromView('line', 'disable', 'disable', 'beginning');
+        // $this->crud->addButtonFromView('line', 'disable', 'disable', 'beginning');
 
     }
 
@@ -63,7 +63,14 @@ class TeacherCrudController extends CrudController
     {
         CRUD::setValidation(UserRequest::class);
 
-        CRUD::setFromDb(); // fields
+        // CRUD::setFromDb(); // fields
+        CRUD::field('first_name')->type('text');
+        CRUD::field('last_name')->type('text');
+        CRUD::field('email')->type('email');
+        CRUD::field('dob')->type('date');
+        CRUD::field('phone_number')->type('text');
+        CRUD::field('password')->type('password');
+        CRUD::field('address')->type('text');
 
         /**
          * Fields can be defined using the fluent syntax or array syntax:
